@@ -13,7 +13,7 @@ class Particle {
     }
 
     drawMe() {
-        this.decay -= 0.0005;
+        this.decay -= 0.0009;
 
         push();
         strokeWeight(this.weight);

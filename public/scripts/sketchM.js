@@ -47,7 +47,7 @@ function setup() {
   particles = [];
 
 
-  particle = new Particle(10,10,10,10);
+
 
   myColor = 0;
   table = new p5.Table();
