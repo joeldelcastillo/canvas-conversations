@@ -1,0 +1,111 @@
+
+
+html, body {
+
+  padding: 0;
+  display: absolute;
+  /* font-family: my-mersad; */
+  background-color: black;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+  
+}
+
+/* button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+} */
+
+button{
+  cursor: pointer;
+  border: none;
+  color:beige;
+  background-color: #292828;
+  width:50px;
+  height: 50px;
+  /* text-decoration: none; */
+  transition-duration: 0.06s;
+  border-radius: 2px;
+  box-shadow: 3px 3px 2px #414141;
+
+}
+
+button:hover{
+  background-color: #353535;
+}
+
+.button1:hover{
+  background-color: #ab060690;
+}
+
+button:active {
+  background-color: #2b2b2b;
+  box-shadow: 0px 0px #666;
+  transform: translate(3px,3px);
+}
+
+
+
+
+#button1{
+  position:absolute;
+  width:45px;
+  height: 45px;
+  margin-left:auto;
+  margin-top: auto;
+
+  /* background: url("search.png"); */
+}
+canvas {
+  display: block;
+  margin: 0;
+
+
+}
+@font-face {
+  font-family: DIN;
+  src: url(fonts/DIN2014-Bold.ttf);
+  font-family: my-mersad;
+  src: url(fonts/Mersad-Bold.ttf);
+}
+
+/* header{
+  color: white;
+  background: rgba(169, 58, 58, 0);
+  text-align: center;
+  font-size: 80px;
+} */
+
+
+
+ a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover{
+text-decoration: underline;
+}
+
+
+
+
