@@ -1,5 +1,5 @@
 {
-  "name": "websockets",
+  "name": "canvas-conversations",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,19 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bohdandrahan/WebSockets.git"
+    "url": "git+https://github.com/joeldelcastillo/canvas-conversations.git"
   },
   "keywords": [
     "node",
     "p5.js",
     "sockets"
   ],
-  "author": "Bohdan Drahan",
+  "author": "Discourse",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bohdandrahan/WebSockets/issues"
-  },
-  "homepage": "https://github.com/bohdandrahan/WebSockets#readme",
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
