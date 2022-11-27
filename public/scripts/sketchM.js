@@ -4,6 +4,8 @@ Kaleidoscope adopted from https://p5js.org/examples/interaction-kaleidoscope.htm
 
 // Symmetry corresponding to the number of reflections
 
+//hi Joel
+
 
 let particles;
 
