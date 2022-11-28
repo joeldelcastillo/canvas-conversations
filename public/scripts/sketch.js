@@ -21,6 +21,17 @@ let mySaturation = 100;
 let myHue;
 let myLight = 50;
 
+let mySaturation2 = 100;
+let myHue2;
+let myLight2= 50;
+
+
+let dx;
+let dy;
+let dx1
+let dy1
+
+
 
 let rotAngle = 0
 let clearButton;
@@ -47,7 +58,8 @@ let art;
 function setup() {
 
 	particles = [];
-	myHue = random(0,360);
+	myHue = 200;
+	myHue2 = 0;
 
 	myColor = 0;
 	table = new p5.Table();
@@ -192,10 +204,10 @@ function draw() {
 		y: my2,
 		x1: pmx2,
 		y1:pmy2,
-		hue2: myHue,
-		sat2: mySaturation,
-		light2: myLight,
-		strokeWeight2: myStrokeWeight,
+		hue2: myHue2,
+		sat2: mySaturation2,
+		light2: myLight2,
+		strokeWeight2: myStrokeWeight2,
 		vol2 : vol
 	};
 
@@ -210,14 +222,15 @@ function draw() {
 	newRow.setNum('saturation', mySaturation);
 	newRow.setNum('lightness', myLight);
 	newRow.setNum("strokeWeight", myStrokeWeight);
-	// newRow.setNum('mx2', mx2);
-	// newRow.setNum('my2', my2);
-	// newRow.setNum('pmx2', pmx2);
-	// newRow.setNum('pmy2', pmy2);
-	// newRow.setNum('hue2', myHue2);
-	// newRow.setNum('saturation2', mySaturation2);
-	// newRow.setNum('lightness2', myLight2);
-	// newRow.setNum("strokeWeight2", myStrokeWeight2);
+
+	newRow.setNum('mx2', dx);
+	newRow.setNum('my2', dy);
+	newRow.setNum('pmx2', dx1);
+	newRow.setNum('pmy2', dy1);
+	newRow.setNum('hue2', myHue2);
+	newRow.setNum('saturation2', mySaturation2);
+	newRow.setNum('lightness2', myLight2);
+	newRow.setNum("strokeWeight2", myStrokeWeight2);
 
 
 
@@ -261,6 +274,25 @@ function newDrawing(data) {
 	// xOff += constrain(vol / 5, 0, 0.01);
 	// yOff += constrain(vol / 5, 0, 0.01);
 	console.log("working")
+
+	dx = data.x;
+	dy = data.y;
+	dx1 = data.x1
+	dy1 = data.y1
+	myHue2 = data.hue2
+	mySaturation2 = data.sat2
+	myLight2 = data.light2
+	myStrokeWeight2 = data.strokeWeight2
+
+	// newRow.setNum('mx2', data.x);
+	// newRow.setNum('my2', data.y);
+	// newRow.setNum('pmx2', data.x1);
+	// newRow.setNum('pmy2', data.y1);
+	// newRow.setNum('hue2', data.hue2);
+	// newRow.setNum('saturation2', data.sat2);
+	// newRow.setNum('lightness2', data.light2);
+	// newRow.setNum("strokeWeight2", data.strokeWeight2);
+
 
 
 	if (data.vol2 > 0.03) {
