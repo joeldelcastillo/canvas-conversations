@@ -18,7 +18,7 @@ let names = [];
 let table;
 let myColor;
 let mySaturation = 100;
-let myHue = 0;
+let myHue;
 let myLight = 50;
 
 
@@ -47,7 +47,7 @@ let art;
 function setup() {
 
 	particles = [];
-
+	myHue = random(0,360);
 
 	myColor = 0;
 	table = new p5.Table();
@@ -264,7 +264,7 @@ function newDrawing(data) {
 
 
 	if (data.vol2 > 0.03) {
-	particles.push(new Particle(data.x,data.y,data.x1,data.y1,100,data.sat2,data.light2,1,data.strokeWeight2))
+	particles.push(new Particle(data.x,data.y,data.x1,data.y1,data.hue2,data.sat2,data.light2,1,data.strokeWeight2))
 	}
 	// data.color = upgradeColor(data.color);
 	// displayDot(data.x, data.y, data.color, 30);
