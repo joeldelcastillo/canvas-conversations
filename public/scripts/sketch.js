@@ -92,7 +92,7 @@ function setup() {
 	xOff = random(10);
 	yOff = random(10);
 
-	socket = io.connect("http://localhost:3000");
+	socket = io.connect();
 	socket.on("mouse", newDrawing);
 
 
@@ -264,7 +264,7 @@ function newDrawing(data) {
 
 
 	if (data.vol2 > 0.03) {
-	particles.push(new Particle(data.x,data.y,data.x1,data.y1,245,data.sat2,data.light2,1,data.strokeWeight2))
+	particles.push(new Particle(data.x,data.y,data.x1,data.y1,100,data.sat2,data.light2,1,data.strokeWeight2))
 	}
 	// data.color = upgradeColor(data.color);
 	// displayDot(data.x, data.y, data.color, 30);
