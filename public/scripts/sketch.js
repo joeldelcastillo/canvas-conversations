@@ -188,10 +188,10 @@ function draw() {
 	let myStrokeWeight2 = vol * 10;
 
 	data = {
-		x: mx2/2,
-		y: my2/2,
-		x1: pmx2/2,
-		y1:pmy2/2,
+		x: mx2,
+		y: my2,
+		x1: pmx2,
+		y1:pmy2,
 		hue2: myHue,
 		sat2: mySaturation,
 		light2: myLight,
